@@ -12,7 +12,7 @@
 	docker ps --filter "ancestor=embl-person-app"
 
 5) If you are unable to deploy onto docker environment, you can also start the app with the fat jar available in target folder.
-	To do this you need to have JDK11 setup on your classpath, run below command. Navigate to "target" folder.
+	To do this you need to have JDK11 setup on your classpath,navigate to "target" folder & run below command. 
 	java -jar embl-person-app-1.0.0-RELEASE.jar
 
 	
