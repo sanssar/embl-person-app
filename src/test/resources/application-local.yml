@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: person_embeddeddb_test
+      port: 50425
+      host: localhost

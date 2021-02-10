@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.embl.api.PersonControllerTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.731 s - in com.embl.api.PersonControllerTest

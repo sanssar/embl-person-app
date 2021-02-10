@@ -1,0 +1,10 @@
+server:
+  port: 8999
+  servlet:
+    context-path: /embl-person-app
+  error:
+    include-message: always
+
+spring:
+  profiles:
+    default: local

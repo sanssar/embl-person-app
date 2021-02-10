@@ -1,0 +1,10 @@
+com\embl\repository\PersonRepository.class
+com\embl\config\WebSecurityConfig.class
+com\embl\PersonApplication.class
+com\embl\exception\PersonApplicationBadRequestException.class
+com\embl\config\SwaggerConfig.class
+com\embl\service\PersonService.class
+com\embl\api\PersonController.class
+com\embl\exception\PersonEntityNotFoundException.class
+com\embl\document\Person.class
+com\embl\config\WebConfig.class

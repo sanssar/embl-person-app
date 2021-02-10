@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      database: person_embeddeddb
+      port: 50423
+      host: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

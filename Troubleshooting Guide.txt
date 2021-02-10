@@ -1,0 +1,18 @@
+===================== Troubleshooting Guide ===================================
+
+1) Ensure the docker environment path variable is setup by running "docker --version" command. If you see error, please setup the docker environment path variable.
+
+2) Verify docker daemon is running by using "docker info" command.Please start the docker daemon if this is the case.
+	"ERROR: error during connect: This error may indicate that the docker daemon is not running."
+	
+3) If the port 8999 is already in use, update the command to run on different port. Eg, with below command , you could use http://localhost:8990 fom your browser
+	docker build -t embl-person-app . && docker run -p 8990:8999 embl-person-app
+	
+4) Verify there are no errors in logs and "Status" shows up for container before proceeding by using below command.
+	docker ps --filter "ancestor=embl-person-app"
+
+5) If you are unable to deploy onto docker environment, you can also start the app with the fat jar available in target folder.
+	To do this you need to have JDK11 setup on your classpath, run below command. Navigate to "target" folder.
+	java -jar embl-person-app-1.0.0-RELEASE.jar
+
+	

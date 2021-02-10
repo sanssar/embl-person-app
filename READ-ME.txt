@@ -1,0 +1,27 @@
+
+1) Git clone - https://github.com/sanssar/embl-person-app.git
+
+2) Please make sure you have Docker desktop setup or any docker environment to build & deploy. 
+Navigate to Project root directory (where DockerFile exists) & run the below docker command. (For any troubleshooting, refer "Troubleshooting Guide.txt" in project root directory).
+
+docker build -t embl-person-app . && docker run -p 8999:8999 embl-person-app
+
+3) We can verify application health status.Check below url on browser or via curl command. We should be seeing status - UP as reponse.
+
+http://localhost:8999/embl-person-app/actuator/health
+
+4) API documentation is exposed on Swagger UI , you can refer "sample requests" below for examples 
+(Note : Requests are secured and accept application/json only, use admin/admin as username/password)
+
+http://localhost:8999/embl-person-app/swagger-ui.html
+
+
+===== Sample requests =======
+
+Add new Person
+	curl -X POST -H "Content-Type: application/json"  -d "{\"first_name\": \"John\", \"last_name\": \"James\", \"age\": \"50\", \"favourite_colour\": \"blue\"}" "localhost:8999/embl-person-app/person/add" -u admin:admin
+
+Get all Persons
+	curl "localhost:8999/embl-person-app/persons" -u user:user
+
+

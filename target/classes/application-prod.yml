@@ -1,0 +1,11 @@
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoAutoConfiguration
+
+# prod profile should define its own "spring.data.mongodb" config here
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
